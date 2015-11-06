@@ -11,15 +11,15 @@ development as a proof of concept:
  * [**javamoney-cdi**](integration/javamoney-cdi) Integrates JavaMoney with CDI, so SPIs can as well be loaded from CDI.
 
 Currently the following modules are retired (or archived, not actively maintained):
-* [**Formatting**](format) provides an extendble formatting library that allows to define complex formatters, that can be configured in arbitrary ways using `LocalizationStyle` instances.
+* [**Formatting**](retired/format) provides an extendble formatting library that allows to define complex formatters, that can be configured in arbitrary ways using `LocalizationStyle` instances.
 Also available is a flexible Builder for creating arbitrary complex formatters and parsers based on an ordered set of arbitrary tokens.
-* [**javamoney-all**](retired/java-money-all) provides a pom that imports everything you need (API, RI and the released JavaMoney libraries).
-* [**Region API**](regions) provides a forest (a set of trees) of regions. This allows to model regional hierarchies in a more flexible and intuitive way, than adding all functionalities into `java.util.Locale`.
+* [**javamoney-all**](retired/javamoney-all) provides a pom that imports everything you need (API, RI and the released JavaMoney libraries).
+* [**Region API**](retired/regions) provides a forest (a set of trees) of regions. This allows to model regional hierarchies in a more flexible and intuitive way, than adding all functionalities into `java.util.Locale`.
 By default the Unicode CLDR region tree, well as ISO countries defined by the 2- or 3-letter country code are available.
 Of course, the API is fully extendible, so customer related regions such as legal units, customer segments etc can be mapped easily to this API, also.
-* [**Validity API**](validity) This API provides a generic API for accessing historic validity information for arbitrary items, and for relationships between items.
+* [**Validity API**](retired/validity) This API provides a generic API for accessing historic validity information for arbitrary items, and for relationships between items.
 By default the API provides access to the historic relationship of currencies to countries using the Unicode CLDR data.
-* [**Data**](data) JavaMoney Data
+* [**Data**](retired/cldr-data) JavaMoney Data
 
 To use the library you simply have to add the Maven dependency to your project (tbd)
 
